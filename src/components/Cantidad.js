@@ -17,7 +17,7 @@ class Cantidad extends React.Component {
                         keyfilter="pnum"
                         value={this.props.cantidad}
                         onChange={this.handleChange}
-                        placeholder="1.000"
+                        placeholder="1"
                     />
                 </div>
             </div>
