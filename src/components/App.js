@@ -8,10 +8,9 @@ import Resultado from "./Resultado";
 
 class App extends React.Component {
     state = {
-        cantidad: "0",
+        cantidad: 1,
         monedas: ["cobre", "plata", "oro", "platinio"],
-        selectedIndex: 2,
-        resultado: 0
+        selectedIndex: 2
     };
     updateCantidad = cantidad => {
         this.setState({ cantidad: cantidad });
@@ -33,7 +32,7 @@ class App extends React.Component {
                         updateSelected={this.updateSelected}
                         selected={this.state.selectedIndex}
                     />
-                    <Resultado resultado={this.state.resultado} />
+                    <Resultado {...this.state} />
                 </div>
             </div>
         );
