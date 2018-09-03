@@ -22,7 +22,7 @@ class App extends React.Component {
         return (
             <div className="container">
                 <Header />
-                <div className="row align-items-center">
+                <div className="row align-items-center justify-content-between">
                     <Cantidad
                         updateCantidad={this.updateCantidad}
                         cantidad={this.state.cantidad}

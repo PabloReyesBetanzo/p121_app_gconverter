@@ -1,4 +1,5 @@
 import React from "react";
+import Strings from "../Utilities/Strings";
 
 class RadioButton extends React.Component {
     handleChange = e => {
@@ -7,7 +8,7 @@ class RadioButton extends React.Component {
     render() {
         let checked = this.props.selected === this.props.index ? true : false;
         return (
-            <label className="radioButtonItem">
+            <label className="radio_buttons-item">
                 <input
                     type="radio"
                     name={this.props.name}
@@ -15,7 +16,7 @@ class RadioButton extends React.Component {
                     onChange={this.handleChange}
                     checked={checked}
                 />
-                {this.props.label}
+                <span>{Strings.uc_first(this.props.label)}</span>
             </label>
         );
     }

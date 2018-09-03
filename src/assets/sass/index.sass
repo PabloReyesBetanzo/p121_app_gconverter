@@ -11,7 +11,7 @@ body
 .row
     margin-top: 20px
 
-
+// Overwrite inputtext styles
 body .p-inputtext,
 .p-inputgroup-addon
     font-size: 20px
@@ -19,3 +19,42 @@ body .p-inputtext
     width: 100%
 body .p-inputgroup .p-inputgroup-addon
     min-width: 3.5em
+
+// RadioButtonMenu
+.radio_buttons
+    font-size: 1rem
+    display: flex
+    flex-direction: column
+    flex-wrap: no-wrap
+    align-items: center
+    justify-content: center
+    & .radio_buttons-item
+        position: relative
+        margin-bottom: 0
+        width: 100%
+        &:first-child span
+            border-top-left-radius: 4px
+            border-top-right-radius: 4px
+        &:last-child span
+            border-bottom-left-radius: 4px
+            border-bottom-right-radius: 4px
+        & span
+            display: block
+            width: 100%
+            height: 100%
+            padding: 10px
+            border: 1px solid #e5e5e5
+            background-color: #f5f5f5
+            text-align: center
+            line-height: 1
+            cursor: pointer
+        & input
+            display: none
+            position: absolute
+            top: 0
+            left: 0
+            &:checked ~ span
+                background-color: #4B9C9A
+                border-color: #4B9C9A
+                color: #f5f5f5
+
