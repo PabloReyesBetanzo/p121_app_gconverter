@@ -4,17 +4,17 @@
   "description": "Setup built on top of create-react-app for app development",
   "private": true,
   "devDependencies": {
-    "node-sass-chokidar": "^1.3.3",
+    "node-sass-chokidar": "^1.3.4",
     "npm-run-all": "^4.1.3",
     "react-scripts": "1.1.5"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "numeral": "^2.0.6",
-    "primeicons": "^1.0.0-beta.10",
-    "primereact": "^2.0.0-beta.3",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "primeicons": "^1.0.0",
+    "primereact": "^2.0.0-beta.9",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
